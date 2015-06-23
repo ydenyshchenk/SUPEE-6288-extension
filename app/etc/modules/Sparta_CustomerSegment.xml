@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Sparta_CustomerSegment>
+            <active>true</active>
+            <codePool>local</codePool>
+            <!--<depends>
+                <Enterprise_CustomerSegment />
+            </depends>-->
+        </Sparta_CustomerSegment>
+        <Enterprise_CustomerSegment>
+            <active>true</active>
+            <codePool>core</codePool>
+            <depends>
+                <Mage_Customer/>
+                <Enterprise_Customer/>
+                <Mage_Adminhtml/>
+                <Mage_Catalog/>
+                <Mage_CatalogRule/>
+                <Mage_Rule/>
+                <Mage_Log/>
+                <Sparta_CustomerSegment/>
+            </depends>
+        </Enterprise_CustomerSegment>
+    </modules>
+</config>

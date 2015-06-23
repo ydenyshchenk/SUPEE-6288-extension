@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Sparta_CustomerSegment>
+            <version>1.0.0.0</version>
+        </Sparta_CustomerSegment>
+    </modules>
+    <global>
+        <models>
+            <sparta_customersegment>
+                <class>Sparta_CustomerSegment_Model</class>
+            </sparta_customersegment>
+        </models>
+    </global>
+    <adminhtml>
+        <events>
+            <salesrule_rule_condition_combine>
+                <observers>
+                    <sparta_customersegment>
+                        <class>sparta_customersegment/observer</class>
+                        <method>addSegmentsToSalesRuleCombine</method>
+                    </sparta_customersegment>
+                </observers>
+            </salesrule_rule_condition_combine>
+        </events>
+    </adminhtml>
+</config>
