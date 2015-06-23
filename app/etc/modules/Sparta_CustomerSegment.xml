@@ -4,9 +4,6 @@
         <Sparta_CustomerSegment>
             <active>true</active>
             <codePool>local</codePool>
-            <!--<depends>
-                <Enterprise_CustomerSegment />
-            </depends>-->
         </Sparta_CustomerSegment>
         <Enterprise_CustomerSegment>
             <active>true</active>
@@ -19,7 +16,7 @@
                 <Mage_CatalogRule/>
                 <Mage_Rule/>
                 <Mage_Log/>
-                <Sparta_CustomerSegment/>
+                <Sparta_CustomerSegment/><!-- dependency required for observers sorting -->
             </depends>
         </Enterprise_CustomerSegment>
     </modules>
